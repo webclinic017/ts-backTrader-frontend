@@ -1,0 +1,392 @@
+[
+    {
+        "time": "2021-01-12",
+        "buy": 3.065,
+        "sellTime": "2021-01-14",
+        "sell": 2.997,
+        "profitPoint": -0.068,
+        "profitRate": -0.022,
+        "profitMoney": -230,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-01-20",
+        "buy": 3.046,
+        "sellTime": "2021-01-26",
+        "sell": 3.215,
+        "profitPoint": 0.169,
+        "profitRate": 0.055,
+        "profitMoney": 540,
+        "holdDays": 6
+    },
+    {
+        "time": "2021-02-02",
+        "buy": 3.111,
+        "sellTime": "2021-02-04",
+        "sell": 3.09,
+        "profitPoint": -0.021,
+        "profitRate": -0.007,
+        "profitMoney": -80,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-02-05",
+        "buy": 3.102,
+        "sellTime": "2021-02-19",
+        "sell": 3.186,
+        "profitPoint": 0.084,
+        "profitRate": 0.027,
+        "profitMoney": 260,
+        "holdDays": 14
+    },
+    {
+        "time": "2021-03-04",
+        "buy": 2.863,
+        "sellTime": "2021-03-08",
+        "sell": 2.783,
+        "profitPoint": -0.08,
+        "profitRate": -0.028,
+        "profitMoney": -290,
+        "holdDays": 4
+    },
+    {
+        "time": "2021-03-29",
+        "buy": 2.666,
+        "sellTime": "2021-04-07",
+        "sell": 2.711,
+        "profitPoint": 0.045,
+        "profitRate": 0.017,
+        "profitMoney": 160,
+        "holdDays": 9
+    },
+    {
+        "time": "2021-03-30",
+        "buy": 2.669,
+        "sellTime": "2021-04-07",
+        "sell": 2.711,
+        "profitPoint": 0.042,
+        "profitRate": 0.016,
+        "profitMoney": 150,
+        "holdDays": 8
+    },
+    {
+        "time": "2021-04-19",
+        "buy": 2.709,
+        "sellTime": "2021-04-27",
+        "sell": 2.857,
+        "profitPoint": 0.148,
+        "profitRate": 0.055,
+        "profitMoney": 540,
+        "holdDays": 8
+    },
+    {
+        "time": "2021-04-28",
+        "buy": 2.884,
+        "sellTime": "2021-04-30",
+        "sell": 2.941,
+        "profitPoint": 0.057,
+        "profitRate": 0.02,
+        "profitMoney": 190,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-05-06",
+        "buy": 2.963,
+        "sellTime": "2021-05-07",
+        "sell": 2.862,
+        "profitPoint": -0.101,
+        "profitRate": -0.034,
+        "profitMoney": -350,
+        "holdDays": 1
+    },
+    {
+        "time": "2021-05-17",
+        "buy": 2.963,
+        "sellTime": "2021-05-21",
+        "sell": 3.003,
+        "profitPoint": 0.04,
+        "profitRate": 0.013,
+        "profitMoney": 120,
+        "holdDays": 4
+    },
+    {
+        "time": "2021-05-19",
+        "buy": 3.023,
+        "sellTime": "2021-05-21",
+        "sell": 3.003,
+        "profitPoint": -0.02,
+        "profitRate": -0.007,
+        "profitMoney": -80,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-05-25",
+        "buy": 3.042,
+        "sellTime": "2021-05-27",
+        "sell": 3.08,
+        "profitPoint": 0.038,
+        "profitRate": 0.012,
+        "profitMoney": 110,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-05-27",
+        "buy": 3.12,
+        "sellTime": "2021-06-03",
+        "sell": 3.12,
+        "profitPoint": 0,
+        "profitRate": 0,
+        "profitMoney": -10,
+        "holdDays": 7
+    },
+    {
+        "time": "2021-06-08",
+        "buy": 3.136,
+        "sellTime": "2021-06-08",
+        "sell": 3.092,
+        "profitPoint": -0.044,
+        "profitRate": -0.014,
+        "profitMoney": -150,
+        "holdDays": 0
+    },
+    {
+        "time": "2021-06-10",
+        "buy": 3.136,
+        "sellTime": "2021-06-15",
+        "sell": 3.159,
+        "profitPoint": 0.023,
+        "profitRate": 0.007,
+        "profitMoney": 60,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-06-23",
+        "buy": 3.191,
+        "sellTime": "2021-06-30",
+        "sell": 3.282,
+        "profitPoint": 0.091,
+        "profitRate": 0.029,
+        "profitMoney": 280,
+        "holdDays": 7
+    },
+    {
+        "time": "2021-06-25",
+        "buy": 3.218,
+        "sellTime": "2021-06-30",
+        "sell": 3.282,
+        "profitPoint": 0.064,
+        "profitRate": 0.02,
+        "profitMoney": 190,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-06-30",
+        "buy": 3.336,
+        "sellTime": "2021-07-02",
+        "sell": 3.32,
+        "profitPoint": -0.016,
+        "profitRate": -0.005,
+        "profitMoney": -60,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-07-08",
+        "buy": 3.332,
+        "sellTime": "2021-07-14",
+        "sell": 3.372,
+        "profitPoint": 0.04,
+        "profitRate": 0.012,
+        "profitMoney": 110,
+        "holdDays": 6
+    },
+    {
+        "time": "2021-07-15",
+        "buy": 3.415,
+        "sellTime": "2021-07-19",
+        "sell": 3.322,
+        "profitPoint": -0.093,
+        "profitRate": -0.027,
+        "profitMoney": -280,
+        "holdDays": 4
+    },
+    {
+        "time": "2021-07-21",
+        "buy": 3.402,
+        "sellTime": "2021-07-23",
+        "sell": 3.404,
+        "profitPoint": 0.002,
+        "profitRate": 0.001,
+        "profitMoney": 0,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-07-29",
+        "buy": 3.34,
+        "sellTime": "2021-08-02",
+        "sell": 3.292,
+        "profitPoint": -0.048,
+        "profitRate": -0.014,
+        "profitMoney": -150,
+        "holdDays": 4
+    },
+    {
+        "time": "2021-08-02",
+        "buy": 3.371,
+        "sellTime": "2021-08-04",
+        "sell": 3.34,
+        "profitPoint": -0.031,
+        "profitRate": -0.009,
+        "profitMoney": -100,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-08-04",
+        "buy": 3.408,
+        "sellTime": "2021-08-06",
+        "sell": 3.398,
+        "profitPoint": -0.01,
+        "profitRate": -0.003,
+        "profitMoney": -40,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-08-24",
+        "buy": 3.204,
+        "sellTime": "2021-08-27",
+        "sell": 3.16,
+        "profitPoint": -0.044,
+        "profitRate": -0.014,
+        "profitMoney": -150,
+        "holdDays": 3
+    },
+    {
+        "time": "2021-09-06",
+        "buy": 3.11,
+        "sellTime": "2021-09-09",
+        "sell": 3.115,
+        "profitPoint": 0.005,
+        "profitRate": 0.002,
+        "profitMoney": 10,
+        "holdDays": 3
+    },
+    {
+        "time": "2021-09-10",
+        "buy": 3.113,
+        "sellTime": "2021-09-15",
+        "sell": 3.122,
+        "profitPoint": 0.009,
+        "profitRate": 0.003,
+        "profitMoney": 20,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-09-24",
+        "buy": 3.127,
+        "sellTime": "2021-09-28",
+        "sell": 3.118,
+        "profitPoint": -0.009,
+        "profitRate": -0.003,
+        "profitMoney": -40,
+        "holdDays": 4
+    },
+    {
+        "time": "2021-09-30",
+        "buy": 3.118,
+        "sellTime": "2021-10-11",
+        "sell": 3.125,
+        "profitPoint": 0.007,
+        "profitRate": 0.002,
+        "profitMoney": 10,
+        "holdDays": 11
+    },
+    {
+        "time": "2021-10-15",
+        "buy": 3.147,
+        "sellTime": "2021-10-20",
+        "sell": 3.18,
+        "profitPoint": 0.033,
+        "profitRate": 0.01,
+        "profitMoney": 90,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-10-19",
+        "buy": 3.185,
+        "sellTime": "2021-10-20",
+        "sell": 3.18,
+        "profitPoint": -0.005,
+        "profitRate": -0.002,
+        "profitMoney": -30,
+        "holdDays": 1
+    },
+    {
+        "time": "2021-10-22",
+        "buy": 3.19,
+        "sellTime": "2021-10-27",
+        "sell": 3.217,
+        "profitPoint": 0.027,
+        "profitRate": 0.008,
+        "profitMoney": 70,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-10-29",
+        "buy": 3.221,
+        "sellTime": "2021-11-10",
+        "sell": 3.24,
+        "profitPoint": 0.019,
+        "profitRate": 0.006,
+        "profitMoney": 50,
+        "holdDays": 12
+    },
+    {
+        "time": "2021-11-11",
+        "buy": 3.284,
+        "sellTime": "2021-11-16",
+        "sell": 3.284,
+        "profitPoint": 0,
+        "profitRate": 0,
+        "profitMoney": -10,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-11-19",
+        "buy": 3.308,
+        "sellTime": "2021-11-24",
+        "sell": 3.371,
+        "profitPoint": 0.063,
+        "profitRate": 0.019,
+        "profitMoney": 180,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-11-29",
+        "buy": 3.392,
+        "sellTime": "2021-12-01",
+        "sell": 3.364,
+        "profitPoint": -0.028,
+        "profitRate": -0.008,
+        "profitMoney": -90,
+        "holdDays": 2
+    },
+    {
+        "time": "2021-12-10",
+        "buy": 3.354,
+        "sellTime": "2021-12-15",
+        "sell": 3.362,
+        "profitPoint": 0.008,
+        "profitRate": 0.002,
+        "profitMoney": 10,
+        "holdDays": 5
+    },
+    {
+        "time": "2021-12-17",
+        "buy": 3.376,
+        "sellTime": "2021-12-22",
+        "sell": 3.249,
+        "profitPoint": -0.127,
+        "profitRate": -0.038,
+        "profitMoney": -390,
+        "holdDays": 5
+    }
+]
