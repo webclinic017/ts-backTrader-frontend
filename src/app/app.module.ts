@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {AppComponentStore} from "./store/app.store";
+import {NgxEchartsModule} from "ngx-echarts";
 
 @NgModule({
   declarations: [
@@ -10,9 +12,12 @@ import {FlexLayoutModule} from "@angular/flex-layout";
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
-  providers: [],
+  providers: [AppComponentStore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
