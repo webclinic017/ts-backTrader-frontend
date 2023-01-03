@@ -67,7 +67,8 @@
               "browserTarget": "ts-backTrader-frontend:build:production"
             },
             "development": {
-              "browserTarget": "ts-backTrader-frontend:build:development"
+              "browserTarget": "ts-backTrader-frontend:build:development",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"
