@@ -12,6 +12,7 @@ export const buyPointMaker = ({buyLogs}: EntityTradeLogData) => {
       itemStyle: {
         color: 'green',
         opacity: 0.85,
+        borderCap: 'butt',
       },
       label: {
         offset: [0, 8],
