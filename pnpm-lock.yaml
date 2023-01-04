@@ -14,10 +14,12 @@ specifiers:
   '@angular/platform-browser': ^14.2.0
   '@angular/platform-browser-dynamic': ^14.2.0
   '@angular/router': ^14.2.0
+  '@ngrx/component': '14'
   '@ngrx/component-store': ^14.3.2
   '@types/jasmine': ~4.0.0
   '@types/lodash': 4.14.191
   echarts: ^5.4.1
+  immer: ^9.0.17
   jasmine-core: ~4.3.0
   karma: ~6.4.0
   karma-chrome-launcher: ~3.1.0
@@ -43,8 +45,10 @@ dependencies:
   '@angular/platform-browser': 14.2.12_dax2jypo47bpgiczdvqsh7iq24
   '@angular/platform-browser-dynamic': 14.2.12_6cqhozsvdfqcnce26piw2go6r4
   '@angular/router': 14.2.12_z2kexjtwwhydf5pzw2zqeskyey
+  '@ngrx/component': 14.3.2_2hai2sefhp5aruliqrvjdqyo5m
   '@ngrx/component-store': 14.3.2_mfaua6ist3zuq7ixvpkrdcptfy
   echarts: 5.4.1
+  immer: 9.0.17
   lodash: 4.17.21
   ng-zorro-antd: 14.3.0_x7njbxos3za343467efgvi4prq
   ngx-echarts: 14.0.0_echarts@5.4.1
@@ -1933,6 +1937,19 @@ packages:
       '@angular/core': ^14.0.0
       rxjs: ^6.5.3 || ^7.5.0
     dependencies:
+      '@angular/core': 14.2.12_rxjs@7.5.7+zone.js@0.11.8
+      rxjs: 7.5.7
+      tslib: 2.4.1
+    dev: false
+
+  /@ngrx/component/14.3.2_2hai2sefhp5aruliqrvjdqyo5m:
+    resolution: {integrity: sha512-SQlCcbW4CZb2vEPYGNvgeF27qa7dcPeLoui4mgof4FCdz/t3Bd+5EanDsqCm5GbHHPzasCBmN72+Lqt5E+mqgQ==}
+    peerDependencies:
+      '@angular/common': ^14.0.0
+      '@angular/core': ^14.0.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@angular/common': 14.2.12_mfaua6ist3zuq7ixvpkrdcptfy
       '@angular/core': 14.2.12_rxjs@7.5.7+zone.js@0.11.8
       rxjs: 7.5.7
       tslib: 2.4.1
@@ -4218,6 +4235,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /immer/9.0.17:
+    resolution: {integrity: sha512-+hBruaLSQvkPfxRiTLK/mi4vLH+/VQS6z2KJahdoxlleFOI8ARqzOF17uy12eFDlqWmPoygwc5evgwcp+dlHhg==}
+    dev: false
 
   /immutable/4.2.1:
     resolution: {integrity: sha512-7WYV7Q5BTs0nlQm7tl92rDYYoyELLKHoDMBKhrxEoiV4mrfVdRz8hzPiYOzH7yWjzoVEamxRuAqhxL2PLRwZYQ==}

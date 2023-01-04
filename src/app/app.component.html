@@ -1,4 +1,8 @@
 <section fxFill fxLayout="column">
-  <div [options]="options" class="demo-chart" echarts
+  <!--  <ng-container *ngIf="echartOptions$|ngrxPush as echartOption">-->
+  <div
+    [options]="initOptions" class="demo-chart" echarts
+    [merge]="echartOptions$|ngrxPush|isNotNilPipe"
   ></div>
+  <!--  </ng-container>-->
 </section>
