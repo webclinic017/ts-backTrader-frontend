@@ -13,8 +13,8 @@ export const sellPointMaker = ({sellLogs}: EntityTradeLogData) => {
     coord: [...sellLog],
     value: sellLog.at(-1),
     itemStyle: {
-      color: 'red',
-      opacity: 0.85,
+      color: 'rgb(238, 102, 102)',
+      // opacity: 0.85,
     },
     label: {
       // offset: [0, 6],

@@ -10,8 +10,8 @@ export const buyPointMaker = ({buyLogs}: EntityTradeLogData) => {
       coord: [...buyLog],
       value: buyLog.at(1),
       itemStyle: {
-        color: 'green',
-        opacity: 0.85,
+        color: 'rgb(145, 204, 117)',
+        // opacity: 0.85,
         borderCap: 'butt',
       },
       label: {
