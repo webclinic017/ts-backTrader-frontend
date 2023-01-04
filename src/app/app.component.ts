@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
         markPoint: {
           label: {
             formatter: function (param: any) {
-              return param != null ? Math.round(param.value) + '' : '';
+              return param != null ? param.value + '' : '';
             }
           },
           data: [],
@@ -174,5 +174,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.loadKLine();
+    this.store.loadTradeLog();
   }
 }

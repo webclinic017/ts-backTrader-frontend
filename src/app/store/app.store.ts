@@ -5,166 +5,40 @@ import {concatMap, tap} from "rxjs";
 import {EntityEchartKLine} from "./entity.echart-k-line";
 import {EntityCandleLink} from "./entity.candle_link";
 import {EChartsOption} from "echarts";
-import {downBorderColor, downColor, upBorderColor, upColor} from "../chart-data/chart-colors";
 import produce from "immer";
+import {tradeLogData} from "../chart-data/utils/trade-log.data";
+import {EntityTradeLog} from "../chart-data/entity.trade-log";
+import {sellPointMaker} from "../chart-data/utils/sell-point.maker";
+import {buyPointMaker} from "../chart-data/utils/buy-point.maker";
 
 
 interface State {
   options: EChartsOption,
-  kLine: Array<EntityEchartKLine>
 }
 
 const initState: State = {
   options: {
-    title: {
-      text: '上证指数',
-      left: 0
-    },
     xAxis: {
-      type: 'category',
+      data: []
+    },
+    series: [{
       data: [],
-      boundaryGap: false,
-      axisLine: {onZero: false},
-      splitLine: {show: false},
-      min: 'dataMin',
-      max: 'dataMax'
-    },
-    yAxis: {
-      scale: true,
-      splitArea: {
-        show: true
+      markPoint: {
+        data: []
       }
-    },
-    dataZoom: [
-      {
-        type: 'inside',
-        start: 50,
-        end: 100
-      },
-      {
-        show: true,
-        type: 'slider',
-        top: '90%',
-        start: 50,
-        end: 100
-      }
-    ],
-    series: [
-      {
-        name: '日K',
-        type: 'candlestick',
-        data: [],
-        itemStyle: {
-          color: upColor,
-          color0: downColor,
-          borderColor: upBorderColor,
-          borderColor0: downBorderColor
-        },
-        // markPoint: {
-        //   label: {
-        //     formatter: function (param: any) {
-        //       return param != null ? Math.round(param.value) + '' : '';
-        //     }
-        //   },
-        //   data: [
-        //     {
-        //       name: 'Mark',
-        //       coord: ['2013/5/31', 2300],
-        //       value: 2300,
-        //       itemStyle: {
-        //         color: 'rgb(41,60,85)'
-        //       }
-        //     },
-        //     {
-        //       name: 'highest value',
-        //       type: 'max',
-        //       valueDim: 'highest'
-        //     },
-        //     {
-        //       name: 'lowest value',
-        //       type: 'min',
-        //       valueDim: 'lowest'
-        //     },
-        //     {
-        //       name: 'average value on close',
-        //       type: 'average',
-        //       valueDim: 'close'
-        //     }
-        //   ],
-        //   tooltip: {
-        //     formatter: function (param: any) {
-        //       return param.name + '<br>' + (param.data.coord || '');
-        //     }
-        //   }
-        // },
-        // markLine: {
-        //   symbol: ['none', 'none'],
-        //   data: [
-        //     [
-        //       {
-        //         name: 'from lowest to highest',
-        //         type: 'min',
-        //         valueDim: 'lowest',
-        //         symbol: 'circle',
-        //         symbolSize: 10,
-        //         label: {
-        //           show: false
-        //         },
-        //         emphasis: {
-        //           label: {
-        //             show: false
-        //           }
-        //         }
-        //       },
-        //       {
-        //         type: 'max',
-        //         valueDim: 'highest',
-        //         symbol: 'circle',
-        //         symbolSize: 10,
-        //         label: {
-        //           show: false
-        //         },
-        //         emphasis: {
-        //           label: {
-        //             show: false
-        //           }
-        //         }
-        //       }
-        //     ],
-        //     {
-        //       name: 'min line on close',
-        //       type: 'min',
-        //       valueDim: 'close'
-        //     },
-        //     {
-        //       name: 'max line on close',
-        //       type: 'max',
-        //       valueDim: 'close'
-        //     }
-        //   ]
-        // }
-      }
-    ]
+    }]
   },
-  kLine: []
 }
 
 @Injectable()
 export class AppComponentStore extends ComponentStore<State> {
   echartOptions$ = this.select(state => state.options);
-
-  /*
-  * 执行一下行为
-  * 1.获取k线数据,
-  * 2.获取交易日志数据
-  * 3.并把交易日志,展示出来
-  *   * */
+  // 获取K线数据
   loadKLine = this.effect(origin$ => {
     return origin$.pipe(
       concatMap(() => {
           return this.httpClient.get<EntityCandleLink[]>('/assets/kline-data/chuangye_eft.json').pipe(
             tap((data: EntityCandleLink[]) => {
-              // console.log(data);
               const eChartKline: EntityEchartKLine[] = data.map((item: EntityCandleLink) => ({
                 category: item.time.split(',')[0], //把'星期'去掉
                 data: [
@@ -187,6 +61,31 @@ export class AppComponentStore extends ComponentStore<State> {
       )
     )
   })
+  // 获取交易数据
+  loadTradeLog = this.effect(origin$ => {
+    return origin$.pipe(
+      concatMap(() => {
+          return this.httpClient.get<EntityTradeLog[]>('/assets/logs/tradeLogs.json').pipe(
+            tap((data) => {
+              const tradeLogs = tradeLogData(data)
+              const buyMarkers = buyPointMaker(tradeLogs);
+              const sellMarkers = sellPointMaker(tradeLogs);
+              console.log(data);
+              this.patchState(state => produce(state, draft => {
+                  // @ts-ignore
+                  draft.options.series.at(0).markPoint.data.push(
+                    ...buyMarkers,
+                    ...sellMarkers,
+                  );
+                })
+              )
+            })
+          );
+        }
+      )
+    )
+  });
+
 
   constructor(private httpClient: HttpClient) {
     super(initState);
