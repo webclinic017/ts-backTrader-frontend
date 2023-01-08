@@ -1,0 +1,1058 @@
+[
+    {
+        "cTime": "2021-01-04",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-05",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-06",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-07",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-08",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-11",
+        "buyPrice": 3.065
+    },
+    {
+        "cTime": "2021-01-12",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-13",
+        "buyPrice": 3.094,
+        "sellPrice": 2.997
+    },
+    {
+        "cTime": "2021-01-14",
+        "buyPrice": 3.071
+    },
+    {
+        "cTime": "2021-01-15",
+        "buyPrice": 3.071
+    },
+    {
+        "cTime": "2021-01-18",
+        "buyPrice": 3.071
+    },
+    {
+        "cTime": "2021-01-19",
+        "buyPrice": 3.046,
+        "sellPrice": 2.966
+    },
+    {
+        "cTime": "2021-01-20",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-01-21",
+        "sellPrice": 3.103
+    },
+    {
+        "cTime": "2021-01-22",
+        "sellPrice": 3.103
+    },
+    {
+        "cTime": "2021-01-25",
+        "buyPrice": 3.307,
+        "sellPrice": 3.215
+    },
+    {
+        "cTime": "2021-01-26",
+        "buyPrice": 3.242
+    },
+    {
+        "cTime": "2021-01-27",
+        "buyPrice": 3.242
+    },
+    {
+        "cTime": "2021-01-28",
+        "buyPrice": 3.222
+    },
+    {
+        "cTime": "2021-01-29",
+        "buyPrice": 3.111
+    },
+    {
+        "cTime": "2021-02-01",
+        "buyPrice": 3.111
+    },
+    {
+        "cTime": "2021-02-02",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-02-03",
+        "buyPrice": 3.16,
+        "sellPrice": 3.105
+    },
+    {
+        "cTime": "2021-02-04",
+        "buyPrice": 3.089
+    },
+    {
+        "cTime": "2021-02-05",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-02-09",
+        "sellPrice": 3.171
+    },
+    {
+        "cTime": "2021-02-10",
+        "sellPrice": 3.171
+    },
+    {
+        "cTime": "2021-02-18",
+        "buyPrice": 3.359,
+        "sellPrice": 3.186
+    },
+    {
+        "cTime": "2021-02-19",
+        "buyPrice": 3.353
+    },
+    {
+        "cTime": "2021-02-22",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-02-23",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-02-24",
+        "buyPrice": 3.156
+    },
+    {
+        "cTime": "2021-02-25",
+        "buyPrice": 3.01
+    },
+    {
+        "cTime": "2021-02-26",
+        "buyPrice": 2.929
+    },
+    {
+        "cTime": "2021-03-01",
+        "buyPrice": 2.929
+    },
+    {
+        "cTime": "2021-03-02",
+        "buyPrice": 2.915,
+        "sellPrice": 2.834
+    },
+    {
+        "cTime": "2021-03-03",
+        "buyPrice": 2.854
+    },
+    {
+        "cTime": "2021-03-04",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-03-05",
+        "sellPrice": 2.859
+    },
+    {
+        "cTime": "2021-03-08",
+        "buyPrice": 2.863
+    },
+    {
+        "cTime": "2021-03-09",
+        "buyPrice": 2.783
+    },
+    {
+        "cTime": "2021-03-10",
+        "buyPrice": 2.783
+    },
+    {
+        "cTime": "2021-03-11",
+        "buyPrice": 2.783
+    },
+    {
+        "cTime": "2021-03-12",
+        "buyPrice": 2.673,
+        "sellPrice": 2.616
+    },
+    {
+        "cTime": "2021-03-15",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-16",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-17",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-18",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-19",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-22",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-23",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-24",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-25",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-26",
+        "buyPrice": 2.666
+    },
+    {
+        "cTime": "2021-03-29",
+        "buyPrice": 2.669,
+        "sellPrice": 2.621
+    },
+    {
+        "cTime": "2021-03-30",
+        "sellPrice": 2.627
+    },
+    {
+        "cTime": "2021-03-31",
+        "sellPrice": 2.627
+    },
+    {
+        "cTime": "2021-04-01",
+        "sellPrice": 2.627
+    },
+    {
+        "cTime": "2021-04-02",
+        "sellPrice": 2.665
+    },
+    {
+        "cTime": "2021-04-06",
+        "buyPrice": 2.769,
+        "sellPrice": 2.711
+    },
+    {
+        "cTime": "2021-04-07",
+        "buyPrice": 2.762
+    },
+    {
+        "cTime": "2021-04-08",
+        "buyPrice": 2.762
+    },
+    {
+        "cTime": "2021-04-09",
+        "buyPrice": 2.74
+    },
+    {
+        "cTime": "2021-04-12",
+        "buyPrice": 2.722
+    },
+    {
+        "cTime": "2021-04-13",
+        "buyPrice": 2.722
+    },
+    {
+        "cTime": "2021-04-14",
+        "buyPrice": 2.722
+    },
+    {
+        "cTime": "2021-04-15",
+        "buyPrice": 2.722
+    },
+    {
+        "cTime": "2021-04-16",
+        "buyPrice": 2.709,
+        "sellPrice": 2.65
+    },
+    {
+        "cTime": "2021-04-19",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-04-20",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-04-21",
+        "sellPrice": 2.767
+    },
+    {
+        "cTime": "2021-04-22",
+        "sellPrice": 2.767
+    },
+    {
+        "cTime": "2021-04-23",
+        "sellPrice": 2.831
+    },
+    {
+        "cTime": "2021-04-26",
+        "buyPrice": 2.954,
+        "sellPrice": 2.861
+    },
+    {
+        "cTime": "2021-04-27",
+        "buyPrice": 2.683
+    },
+    {
+        "cTime": "2021-04-28",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-04-29",
+        "sellPrice": 2.946
+    },
+    {
+        "cTime": "2021-04-30",
+        "buyPrice": 2.683
+    },
+    {
+        "cTime": "2021-05-06",
+        "buyPrice": 2.963,
+        "sellPrice": 2.862
+    },
+    {
+        "cTime": "2021-05-07",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-10",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-11",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-12",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-13",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-14",
+        "buyPrice": 2.963
+    },
+    {
+        "cTime": "2021-05-17",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-05-18",
+        "buyPrice": 3.023,
+        "sellPrice": 2.964
+    },
+    {
+        "cTime": "2021-05-19",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-05-20",
+        "sellPrice": 3.003
+    },
+    {
+        "cTime": "2021-05-21",
+        "buyPrice": 3.065,
+        "sellPrice": 2.992
+    },
+    {
+        "cTime": "2021-05-24",
+        "buyPrice": 3
+    },
+    {
+        "cTime": "2021-05-25",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-05-26",
+        "buyPrice": 3.12,
+        "sellPrice": 3.08
+    },
+    {
+        "cTime": "2021-05-27",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-05-28",
+        "sellPrice": 3.117
+    },
+    {
+        "cTime": "2021-05-31",
+        "sellPrice": 3.117
+    },
+    {
+        "cTime": "2021-06-01",
+        "sellPrice": 3.117
+    },
+    {
+        "cTime": "2021-06-02",
+        "buyPrice": 3.202,
+        "sellPrice": 3.12
+    },
+    {
+        "cTime": "2021-06-03",
+        "buyPrice": 3.2
+    },
+    {
+        "cTime": "2021-06-04",
+        "buyPrice": 3.2
+    },
+    {
+        "cTime": "2021-06-07",
+        "buyPrice": 3.136,
+        "sellPrice": 3.092
+    },
+    {
+        "cTime": "2021-06-08",
+        "buyPrice": 3.136
+    },
+    {
+        "cTime": "2021-06-09",
+        "buyPrice": 3.136
+    },
+    {
+        "cTime": "2021-06-10",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-06-11",
+        "buyPrice": 3.212,
+        "sellPrice": 3.159
+    },
+    {
+        "cTime": "2021-06-15",
+        "buyPrice": 3.196
+    },
+    {
+        "cTime": "2021-06-16",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-06-17",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-06-18",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-06-21",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-06-22",
+        "buyPrice": 3.191
+    },
+    {
+        "cTime": "2021-06-23",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-06-24",
+        "buyPrice": 3.218,
+        "sellPrice": 3.16
+    },
+    {
+        "cTime": "2021-06-25",
+        "sellPrice": 3.18
+    },
+    {
+        "cTime": "2021-06-28",
+        "sellPrice": 3.18
+    },
+    {
+        "cTime": "2021-06-29",
+        "buyPrice": 3.336,
+        "sellPrice": 3.282
+    },
+    {
+        "cTime": "2021-06-30",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-07-01",
+        "buyPrice": 3.388,
+        "sellPrice": 3.32
+    },
+    {
+        "cTime": "2021-07-02",
+        "buyPrice": 3.381
+    },
+    {
+        "cTime": "2021-07-05",
+        "buyPrice": 3.381
+    },
+    {
+        "cTime": "2021-07-06",
+        "buyPrice": 3.332
+    },
+    {
+        "cTime": "2021-07-07",
+        "buyPrice": 3.332
+    },
+    {
+        "cTime": "2021-07-08",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-07-09",
+        "sellPrice": 3.3
+    },
+    {
+        "cTime": "2021-07-12",
+        "sellPrice": 3.3
+    },
+    {
+        "cTime": "2021-07-13",
+        "buyPrice": 3.452,
+        "sellPrice": 3.372
+    },
+    {
+        "cTime": "2021-07-14",
+        "buyPrice": 3.415
+    },
+    {
+        "cTime": "2021-07-15",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-07-16",
+        "buyPrice": 3.412,
+        "sellPrice": 3.322
+    },
+    {
+        "cTime": "2021-07-19",
+        "buyPrice": 3.402
+    },
+    {
+        "cTime": "2021-07-20",
+        "buyPrice": 3.402
+    },
+    {
+        "cTime": "2021-07-21",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-07-22",
+        "buyPrice": 3.463,
+        "sellPrice": 3.404
+    },
+    {
+        "cTime": "2021-07-23",
+        "buyPrice": 3.455
+    },
+    {
+        "cTime": "2021-07-26",
+        "buyPrice": 3.434
+    },
+    {
+        "cTime": "2021-07-27",
+        "buyPrice": 3.34
+    },
+    {
+        "cTime": "2021-07-28",
+        "buyPrice": 3.34
+    },
+    {
+        "cTime": "2021-07-29",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-07-30",
+        "buyPrice": 3.371,
+        "sellPrice": 3.292
+    },
+    {
+        "cTime": "2021-08-02",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-08-03",
+        "buyPrice": 3.408,
+        "sellPrice": 3.34
+    },
+    {
+        "cTime": "2021-08-04",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-08-05",
+        "buyPrice": 3.457,
+        "sellPrice": 3.398
+    },
+    {
+        "cTime": "2021-08-06",
+        "buyPrice": 3.44
+    },
+    {
+        "cTime": "2021-08-09",
+        "buyPrice": 3.435
+    },
+    {
+        "cTime": "2021-08-10",
+        "buyPrice": 3.435
+    },
+    {
+        "cTime": "2021-08-11",
+        "buyPrice": 3.363,
+        "sellPrice": 3.314
+    },
+    {
+        "cTime": "2021-08-12",
+        "buyPrice": 3.355
+    },
+    {
+        "cTime": "2021-08-13",
+        "buyPrice": 3.32
+    },
+    {
+        "cTime": "2021-08-16",
+        "buyPrice": 3.26
+    },
+    {
+        "cTime": "2021-08-17",
+        "buyPrice": 3.225
+    },
+    {
+        "cTime": "2021-08-18",
+        "buyPrice": 3.225
+    },
+    {
+        "cTime": "2021-08-19",
+        "buyPrice": 3.225
+    },
+    {
+        "cTime": "2021-08-20",
+        "buyPrice": 3.204
+    },
+    {
+        "cTime": "2021-08-23",
+        "buyPrice": 3.204
+    },
+    {
+        "cTime": "2021-08-24",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-08-25",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-08-26",
+        "buyPrice": 3.261,
+        "sellPrice": 3.161
+    },
+    {
+        "cTime": "2021-08-27",
+        "buyPrice": 3.247
+    },
+    {
+        "cTime": "2021-08-30",
+        "buyPrice": 3.214,
+        "sellPrice": 3.147
+    },
+    {
+        "cTime": "2021-08-31",
+        "buyPrice": 3.17
+    },
+    {
+        "cTime": "2021-09-01",
+        "buyPrice": 3.163
+    },
+    {
+        "cTime": "2021-09-02",
+        "buyPrice": 3.163
+    },
+    {
+        "cTime": "2021-09-03",
+        "buyPrice": 3.11
+    },
+    {
+        "cTime": "2021-09-06",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-09-07",
+        "sellPrice": 3.113
+    },
+    {
+        "cTime": "2021-09-08",
+        "buyPrice": 3.18,
+        "sellPrice": 3.115
+    },
+    {
+        "cTime": "2021-09-09",
+        "buyPrice": 3.046
+    },
+    {
+        "cTime": "2021-09-10",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-09-13",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-09-14",
+        "sellPrice": 3.123
+    },
+    {
+        "cTime": "2021-09-15",
+        "buyPrice": 3.152
+    },
+    {
+        "cTime": "2021-09-16",
+        "buyPrice": 3.127
+    },
+    {
+        "cTime": "2021-09-17",
+        "buyPrice": 3.127
+    },
+    {
+        "cTime": "2021-09-22",
+        "buyPrice": 3.127
+    },
+    {
+        "cTime": "2021-09-23",
+        "buyPrice": 3.127
+    },
+    {
+        "cTime": "2021-09-24",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-09-27",
+        "sellPrice": 3.119
+    },
+    {
+        "cTime": "2021-09-28",
+        "buyPrice": 3.17,
+        "sellPrice": 3.102
+    },
+    {
+        "cTime": "2021-09-29",
+        "buyPrice": 3.118
+    },
+    {
+        "cTime": "2021-09-30",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-10-08",
+        "buyPrice": 3.186,
+        "sellPrice": 3.125
+    },
+    {
+        "cTime": "2021-10-11",
+        "buyPrice": 3.169
+    },
+    {
+        "cTime": "2021-10-12",
+        "buyPrice": 3.147
+    },
+    {
+        "cTime": "2021-10-13",
+        "buyPrice": 3.147
+    },
+    {
+        "cTime": "2021-10-14",
+        "buyPrice": 3.147
+    },
+    {
+        "cTime": "2021-10-15",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-10-18",
+        "buyPrice": 3.185,
+        "sellPrice": 3.128
+    },
+    {
+        "cTime": "2021-10-19",
+        "sellPrice": 3.18
+    },
+    {
+        "cTime": "2021-10-20",
+        "buyPrice": 3.215,
+        "sellPrice": 3.172
+    },
+    {
+        "cTime": "2021-10-21",
+        "buyPrice": 3.19
+    },
+    {
+        "cTime": "2021-10-22",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-10-25",
+        "sellPrice": 3.185
+    },
+    {
+        "cTime": "2021-10-26",
+        "buyPrice": 3.262,
+        "sellPrice": 3.217
+    },
+    {
+        "cTime": "2021-10-27",
+        "buyPrice": 3.256
+    },
+    {
+        "cTime": "2021-10-28",
+        "buyPrice": 3.221
+    },
+    {
+        "cTime": "2021-10-29",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-01",
+        "buyPrice": 3.268,
+        "sellPrice": 3.201
+    },
+    {
+        "cTime": "2021-11-02",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-03",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-04",
+        "sellPrice": 3.233
+    },
+    {
+        "cTime": "2021-11-05",
+        "sellPrice": 3.233
+    },
+    {
+        "cTime": "2021-11-08",
+        "sellPrice": 3.233
+    },
+    {
+        "cTime": "2021-11-09",
+        "sellPrice": 3.24
+    },
+    {
+        "cTime": "2021-11-10",
+        "buyPrice": 3.196
+    },
+    {
+        "cTime": "2021-11-11",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-12",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-15",
+        "buyPrice": 3.329,
+        "sellPrice": 3.284
+    },
+    {
+        "cTime": "2021-11-16",
+        "buyPrice": 3.324
+    },
+    {
+        "cTime": "2021-11-17",
+        "buyPrice": 3.324
+    },
+    {
+        "cTime": "2021-11-18",
+        "buyPrice": 3.308,
+        "sellPrice": 3.268
+    },
+    {
+        "cTime": "2021-11-19",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-22",
+        "sellPrice": 3.322
+    },
+    {
+        "cTime": "2021-11-23",
+        "buyPrice": 3.402,
+        "sellPrice": 3.371
+    },
+    {
+        "cTime": "2021-11-24",
+        "buyPrice": 3.392
+    },
+    {
+        "cTime": "2021-11-25",
+        "buyPrice": 3.392
+    },
+    {
+        "cTime": "2021-11-26",
+        "buyPrice": 3.392
+    },
+    {
+        "cTime": "2021-11-29",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-11-30",
+        "buyPrice": 3.408,
+        "sellPrice": 3.364
+    },
+    {
+        "cTime": "2021-12-01",
+        "buyPrice": 3.395
+    },
+    {
+        "cTime": "2021-12-02",
+        "buyPrice": 3.395
+    },
+    {
+        "cTime": "2021-12-03",
+        "buyPrice": 3.395
+    },
+    {
+        "cTime": "2021-12-06",
+        "buyPrice": 3.377
+    },
+    {
+        "cTime": "2021-12-07",
+        "buyPrice": 3.354
+    },
+    {
+        "cTime": "2021-12-08",
+        "buyPrice": 3.354
+    },
+    {
+        "cTime": "2021-12-09",
+        "buyPrice": 3.354
+    },
+    {
+        "cTime": "2021-12-10",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-12-13",
+        "sellPrice": 3.362
+    },
+    {
+        "cTime": "2021-12-14",
+        "sellPrice": 3.362
+    },
+    {
+        "cTime": "2021-12-15",
+        "buyPrice": 3.411,
+        "sellPrice": 3.355
+    },
+    {
+        "cTime": "2021-12-16",
+        "buyPrice": 3.314
+    },
+    {
+        "cTime": "2021-12-17",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-12-20",
+        "buyPrice": null,
+        "sellPrice": null
+    },
+    {
+        "cTime": "2021-12-21",
+        "sellPrice": 3.328
+    },
+    {
+        "cTime": "2021-12-22",
+        "buyPrice": 3.376
+    },
+    {
+        "cTime": "2021-12-23",
+        "buyPrice": 3.322
+    },
+    {
+        "cTime": "2021-12-24",
+        "buyPrice": 3.269
+    },
+    {
+        "cTime": "2021-12-27",
+        "buyPrice": 3.269
+    },
+    {
+        "cTime": "2021-12-28",
+        "buyPrice": 3.269
+    },
+    {
+        "cTime": "2021-12-29",
+        "buyPrice": 3.268
+    },
+    {
+        "cTime": "2021-12-30",
+        "buyPrice": 3.268
+    },
+    {
+        "cTime": "2021-12-31",
+        "buyPrice": 3.247,
+        "sellPrice": 3.207
+    }
+]

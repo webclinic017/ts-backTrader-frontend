@@ -4,20 +4,20 @@ import {HttpClient} from "@angular/common/http";
 import {concatMap, tap} from "rxjs";
 import {EntityEchartKLine} from "./entity.echart-k-line";
 import {EntityCandleLink} from "./entity.candle_link";
-import {EChartsOption} from "echarts";
 import produce from "immer";
-import {tradeLogData} from "../chart-data/utils/trade-log.data";
 import {EntityTradeLog} from "../chart-data/entity.trade-log";
-import {sellPointMaker} from "../chart-data/utils/sell-point.maker";
-import {buyPointMaker} from "../chart-data/utils/buy-point.maker";
+import {initOptions} from "../models/echart-options.initial";
+import {markerByTradeLogs} from "../utils/markerByTradeLogs.utls";
+import {EntityPredictor} from "./entityPredictor";
+import {markLineByPredictorLogs} from "../utils/markLineByPredictorLog.util";
+import {MarkLineOption} from "echarts/types/dist/shared";
 
 
-interface State {
-  options: EChartsOption,
-}
-
-const initState: State = {
+/*初始化状态*/
+const initState = {
+  initOptions, //初始化图标设置
   options: {
+    //变更中图标设置
     xAxis: {
       data: []
     },
@@ -25,13 +25,19 @@ const initState: State = {
       data: [],
       markPoint: {
         data: []
+      },
+      markLine: {
+        data: []
       }
     }]
   },
+  tradeLogs: [] as EntityTradeLog[],
+  predictorLines: [] as MarkLineOption[],
 }
 
 @Injectable()
-export class AppComponentStore extends ComponentStore<State> {
+export class AppComponentStore extends ComponentStore<typeof initState> {
+  initOptions$ = this.select(state => state.initOptions);
   echartOptions$ = this.select(state => state.options);
   // 获取K线数据
   loadKLine = this.effect(origin$ => {
@@ -50,9 +56,7 @@ export class AppComponentStore extends ComponentStore<State> {
               }))
               console.log(eChartKline);
               this.patchState(state => produce(state, draft => {
-                // @ts-ignore
                 draft.options.xAxis.data = eChartKline.map(item => item.category);
-                // @ts-ignore
                 draft.options.series.at(0).data = eChartKline.map(item => item.data);
               }))
             })
@@ -67,15 +71,16 @@ export class AppComponentStore extends ComponentStore<State> {
       concatMap(() => {
           return this.httpClient.get<EntityTradeLog[]>('/assets/logs/tradeLogs.json').pipe(
             tap((data) => {
-              const tradeLogs = tradeLogData(data)
-              const buyMarkers = buyPointMaker(tradeLogs);
-              const sellMarkers = sellPointMaker(tradeLogs);
-              console.log(data);
+              // console.log(data);
+              const {buyMarkers, sellMarkers, markLines} = markerByTradeLogs(data);
               this.patchState(state => produce(state, draft => {
-                  // @ts-ignore
+                  draft.tradeLogs = data;
                   draft.options.series.at(0).markPoint.data.push(
                     ...buyMarkers,
                     ...sellMarkers,
+                  );
+                  draft.options.series.at(0).markLine.data.push(
+                    ...markLines
                   );
                 })
               )
@@ -85,6 +90,29 @@ export class AppComponentStore extends ComponentStore<State> {
       )
     )
   });
+
+  // 获取预测记录
+  loadPredictLog = this.effect(origin$ => {
+    return origin$.pipe(
+      concatMap(() => {
+          return this.httpClient.get<EntityPredictor[]>('/assets/logs/predictorLogs.json').pipe(
+            tap((data) => {
+              // console.log(data);
+              const predictorLines = markLineByPredictorLogs(data);
+              // this.patchState({predictorLines})
+              this.patchState(state => produce(state, draft => {
+                  draft.predictorLines = predictorLines;
+                  draft.options.series.at(0).markLine.data.push(
+                    ...predictorLines
+                  );
+                })
+              )
+            })
+          );
+        }
+      )
+    )
+  })
 
 
   constructor(private httpClient: HttpClient) {

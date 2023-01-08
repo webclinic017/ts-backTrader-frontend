@@ -1,4 +1,4 @@
-export const calculateMA = (dayCount: number,data0:{values:(number | string)[][]}) => {
+export const calculateMA = (dayCount: number, data0: { values: (number | string)[][] }) => {
   const result = [];
   let i = 0;
   const len = data0.values.length;
