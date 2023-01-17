@@ -6,7 +6,6 @@ import {AppStore} from './store/app.store';
   template: `
     <section fxFill fxLayout="column" fxLayoutGap="16px">
       <candle-chart fxFlex=""></candle-chart>
-      <!--      <app-trade-log fxFlex=""></app-trade-log>-->
       <chart-config fxFlex="100px"></chart-config>
     </section>
   `,
@@ -14,7 +13,6 @@ import {AppStore} from './store/app.store';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
-
 
   constructor(private appStore: AppStore) {
   }

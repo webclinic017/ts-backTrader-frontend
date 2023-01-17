@@ -1,11 +1,11 @@
-import {EChartsOption} from "echarts";
-import {buyColor} from "../chart-data/chart-colors";
+import {EChartsOption} from 'echarts';
+import {buyColor} from '../chart-data/chart-colors';
 
 export const initOptions: EChartsOption = {
   animation: false,
   title: {
     text: '创业板',
-    left: '50%'
+    left: '50%',
   },
   tooltip: {
     trigger: 'item',
@@ -13,7 +13,7 @@ export const initOptions: EChartsOption = {
   grid: {
     left: '10%',
     right: '10%',
-    bottom: '15%'
+    bottom: '15%',
   },
   xAxis: {
     type: 'category',
@@ -22,7 +22,7 @@ export const initOptions: EChartsOption = {
     axisLine: {onZero: false},
     splitLine: {show: false},
     min: 'dataMin',
-    max: 'dataMax'
+    max: 'dataMax',
   },
   yAxis: {
     position: 'right',
@@ -39,6 +39,7 @@ export const initOptions: EChartsOption = {
   ],
   series: [
     {
+      animation: false,
       name: '日K',
       type: 'candlestick',
       selectedMode: 'single',
@@ -46,36 +47,39 @@ export const initOptions: EChartsOption = {
       tooltip: {
         show: true,
         formatter: function (param) {
-          const Height = param.data[4];
-          const Low = param.data[3];
-          const maxRang = ((Height - Low) / Height) * 100;
-          // const
-          return `振幅:${maxRang.toFixed(2)}%`;
+          // console.log('formatter', param);
+          const date = param.name;
+          const open = param.data[1];
+          const close = param.data[2];
+          const low = param.data[3];
+          const height = param.data[4];
+          const maxRang = ((height - low) / height) * 100;
+          return `
+          日期:${date} <br/>
+          开:${open} 收:${close} <br/>
+          低:${low} 高:${height} <br/>
+          振幅:${maxRang.toFixed(2)}%`;
         },
-        position: function (pos, params, el, elRect, size) {
-          const obj = {top: 10};
-          obj[['left', 'right'][+(pos[0] < size.viewSize[0] / 2)]] = 30;
-          return obj;
-        }
+        position: [10, 10],
       },
       markPoint: {
         label: {
-          formatter: (param: any) => param !== null ? param.value + '' : ''
+          formatter: (param: any) => param !== null ? param.value + '' : '',
         },
         data: [],
         tooltip: {
           formatter(param) {
             const text = param.color === buyColor ? 'b' : 's';
             return param.name + '<br>' + `${text}: ` + '<b>' + (param?.data?.coord?.at(1) || '') + '</b>';
-          }
-        }
+          },
+        },
       },
       markLine: {
         symbol: ['none', 'none'],
         precision: 3,
         lineStyle: {
           type: 'solid',
-          width: 2
+          width: 2,
         },
         data: [],
         label: {
@@ -85,9 +89,9 @@ export const initOptions: EChartsOption = {
           formatter(param) {
             // console.log(param);
             return `收益率: <b>${(param?.data?.value * 100).toFixed(2)}%</b>`;
-          }
+          },
         },
-      }
+      },
     },
-  ]
+  ],
 };

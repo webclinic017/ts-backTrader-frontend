@@ -25,8 +25,8 @@ import {ECharts} from 'echarts';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CandleChartComponent implements OnInit {
-  initOptions$ = this.appStore.initOptions$;
-  echartOptions$ = this.appStore.echartOptions$;
+  readonly initOptions$ = this.appStore.initOptions$;
+  readonly echartOptions$ = this.appStore.echartOptions$;
 
   constructor(private appStore: AppStore) {
   }

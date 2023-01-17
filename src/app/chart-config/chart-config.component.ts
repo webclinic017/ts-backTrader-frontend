@@ -12,9 +12,10 @@ import {AppStore} from '../store/app.store';
             <span>交易记录线</span>
           </nz-form-label>
           <nz-form-control>
-            <nz-switch [ngModel]="configs.showTradeLog"
-                       (ngModelChange)="toggleTradeLogVisible($event)">
-            </nz-switch>
+            <nz-switch
+              [ngModel]="configs.showTradeLog"
+              (ngModelChange)="toggleTradeLogVisible($event)"
+            ></nz-switch>
           </nz-form-control>
         </nz-form-item>
       </ng-container>
