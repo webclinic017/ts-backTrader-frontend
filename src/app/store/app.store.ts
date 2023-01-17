@@ -9,9 +9,14 @@ import {EntityTradeLog} from '../chart-data/entity.trade-log';
 import {initOptions} from '../models/echart-options.initial';
 import {markerByTradeLogs} from '../utils/markerByTradeLogs.utls';
 import {EntityPredictor} from './entityPredictor';
-import {markLineByPredictorLogs} from '../utils/markLineByPredictorLog.util';
+import {markLineOfPredictorLogs} from '../utils/markLineOfPredictorLog.util';
 import {ECBasicOption, MarkLineOption} from 'echarts/types/dist/shared';
 import {ECharts, EChartsType} from 'echarts';
+import {MarkPointDataItemOption} from 'echarts/types/src/component/marker/MarkPointModel';
+import {EMarkPointType, TradeMarkPointType} from '../models/mark-point.type';
+import {MarkLine2DDataItemOption} from 'echarts/types/src/component/marker/MarkLineModel';
+import {EMarkLineType, TradeMarkLineType} from '../models/mark-line.type';
+import {MarkLineSize} from '../models/mark-line.size';
 
 
 /*初始化状态*/
@@ -104,7 +109,7 @@ export class AppStore extends ComponentStore<tState> {
           return this.httpClient.get<EntityPredictor[]>('/assets/logs/predictorLogs.json').pipe(
             tap((data) => {
               // console.log(data);
-              const predictorLines = markLineByPredictorLogs(data);
+              const predictorLines = markLineOfPredictorLogs(data);
               // this.patchState({predictorLines})
               this.patchState(state => produce(state, draft => {
                   draft.predictorLines = predictorLines;
@@ -137,7 +142,7 @@ export class AppStore extends ComponentStore<tState> {
         ...partyConfig,
       };
     }));
-    this.toggleTradeLog();
+    // this.toggleTradeLog();
   }
 
   initChart($event: EChartsType) {
@@ -221,8 +226,37 @@ export class AppStore extends ComponentStore<tState> {
     );
   }
 
-  private toggleTradeLog() {
+  // 隐藏||显示, 交易记录MarkPoint|MarkLine
+  toggleTradeLogVisible($event: boolean) {
+    const options = this.chartRef.getOption();
+    const {markPoint, markLine} = options['series'][0];
+    /*买卖单*/
+    markPoint.data.forEach((item: MarkPointDataItemOption) => {
+      // 如果不是买卖点,就排除
+      if (!TradeMarkPointType.includes(item.type as EMarkPointType)) {
+        return;
+      }
+      item.symbol = $event ? 'circle' : 'none';
+    });
+    /*交易线*/
+    markLine.data.forEach((item: MarkLine2DDataItemOption) => {
+      let _item;
+      if (Array.isArray(item) && item.length > 0) {
+        _item = item[0];
+      } else {
+        _item = item;
+      }
+
+      // 如果不是买卖点,就排除
+      if (!TradeMarkLineType.includes(_item.type as EMarkLineType)) {
+        return;
+      }
+      _item.lineStyle.width = $event ? MarkLineSize : 0;
+    });
+
+    this.chartRef.setOption(options);
   }
+
 
   // 鼠标移入显示预测点
   private registerMouseHover() {

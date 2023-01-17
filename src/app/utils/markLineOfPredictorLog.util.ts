@@ -1,36 +1,37 @@
-import {EntityPredictor} from "../store/entityPredictor";
-import {buyColor, sellColor} from "../chart-data/chart-colors";
+import {EntityPredictor} from '../store/entityPredictor';
+import {buyColor, sellColor} from '../chart-data/chart-colors';
+import {EMarkLineType} from '../models/mark-line.type';
 
-export const markLineByPredictorLogs = (predictorLogs: EntityPredictor[]) => {
+export const markLineOfPredictorLogs = (predictorLogs: EntityPredictor[]) => {
   return predictorLogs.reduce((pre, cur) => {
     if (cur.buyPrice) {
       pre.push({
         name: cur.cTime,
         yAxis: cur.buyPrice,
-        type: 'predictor_buy',
+        type: EMarkLineType.predictor_buy,
         emphasis: {
-          disable: true
+          disable: true,
         },
         lineStyle: {
           color: buyColor,
           width: 0,
-        }
+        },
       });
     }
     if (cur.sellPrice) {
       pre.push({
         name: cur.cTime,
         yAxis: cur.sellPrice,
-        type: 'predictor_sell',
+        type: EMarkLineType.predictor_sell,
         emphasis: {
-          disable: true
+          disable: true,
         },
         lineStyle: {
           color: sellColor,
           width: 0,
-        }
+        },
       });
     }
     return pre;
   }, []);
-}
+};
