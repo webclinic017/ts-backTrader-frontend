@@ -39,7 +39,7 @@ export class ChartConfigComponent implements OnInit {
 
   /*切换交易记录线*/
   toggleTradeLogVisible($event: boolean) {
-    this.onConfigChange({showTradeLog: $event});
+    // this.onConfigChange({showTradeLog: $event});
     this.appStore.toggleTradeLogVisible($event);
 
   }

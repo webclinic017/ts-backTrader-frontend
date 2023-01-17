@@ -21,5 +21,8 @@ export class AppComponent implements OnInit {
     this.appStore.loadKLine();
     this.appStore.loadTradeLog();
     this.appStore.loadPredictLog();
+    setTimeout(() => {
+      this.appStore.toggleTradeLogVisible(false);
+    }, 500);
   }
 }

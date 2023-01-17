@@ -46,6 +46,7 @@ export const initOptions: EChartsOption = {
       data: [],
       tooltip: {
         show: true,
+        // triggerOn: 'click',
         formatter: function (param) {
           // console.log('formatter', param);
           const date = param.name;
@@ -56,7 +57,7 @@ export const initOptions: EChartsOption = {
           const maxRang = ((height - low) / height) * 100;
           return `
           日期:${date} <br/>
-          开:${open} 收:${close} <br/>
+          开:${open} 收:${close}
           低:${low} 高:${height} <br/>
           振幅:${maxRang.toFixed(2)}%`;
         },

@@ -228,6 +228,7 @@ export class AppStore extends ComponentStore<tState> {
 
   // 隐藏||显示, 交易记录MarkPoint|MarkLine
   toggleTradeLogVisible($event: boolean) {
+    this.modifyConfig({'showTradeLog': $event});
     const options = this.chartRef.getOption();
     const {markPoint, markLine} = options['series'][0];
     /*买卖单*/
