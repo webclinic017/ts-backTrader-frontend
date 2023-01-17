@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AppComponentStore} from "../store/app.store";
+import {AppStore} from "../store/app.store";
 
 @Component({
   selector: 'app-trade-log',
@@ -32,7 +32,7 @@ import {AppComponentStore} from "../store/app.store";
       host {
         display: block;
       }
-      
+
       .list-container {
         overflow: auto;
       }
@@ -42,7 +42,7 @@ import {AppComponentStore} from "../store/app.store";
 export class TradeLogComponent implements OnInit {
   tradeLogs$ = this.appStore.select(state => state.tradeLogs);
 
-  constructor(private appStore: AppComponentStore) {
+  constructor(private appStore: AppStore) {
   }
 
   trackByTimeAndBuyAndSellAndSellTime = (_, item) => {
